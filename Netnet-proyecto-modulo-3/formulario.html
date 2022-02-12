@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Styles/styleFormulario.css">
+    <title>Formulario Comprar</title>
+</head>
+
+<body>
+    <header>
+        <div class="back">
+            <a href="index.html">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6.92969 12L13 5.92969L14.5 7.42969L9.92969 12L14.5 16.5703L13 18.0703L6.92969 12Z"
+                        fill="white" />
+                </svg>
+            </a>
+        </div>
+        <div class="cabecera">
+            <h1 class="title">NETNET</h1>
+        </div>
+    </header>
+    <form>
+        <h3 class="titleForm">Unete A Nosotros</h3>
+        <label>
+            <h6 class="itemsForm">Nombre</h6>
+            <input type="text" id="inputName" required>
+        </label>
+        <label>
+            <h6 class="itemsForm">Apellido</h6>
+            <input type="text" id="inputLastName" required>
+        </label>
+        <label>
+            <h6 class="itemsForm">Correo Electronico</h6>
+            <input type="email" id="inputEmail" required>
+        </label>
+        <label>
+            <h6 class="itemsForm">Contraseña</h6>
+            <input type="password" id="inputPassword" required>
+        </label>
+        
+        <button id="btn-enviar" type="submit">Enviar</button>
+    </form>
+    
+    <div id="validaciones" class="validacionCompra">
+    </div>
+
+    <script type="module" src="./Scripts/scriptForm.js"></script>
+</body>
+
+</html>

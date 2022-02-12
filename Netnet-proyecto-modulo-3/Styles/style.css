@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fjalla+One&family=Fruktur&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.953) 30%, rgb(0, 0, 0) 60%, rgba(0, 0, 0, 0.967) 75%, rgba(0, 0, 0, 0.864) 85%, transparent 100%);
+}
+
+.cabecera {
+    margin: 10px
+}
+
+.cabecera .title {
+    font-size: 20px;
+    font-family: 'Fjalla One', sans-serif;
+    color: rgb(229, 9, 20);
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0;
+}
+
+nav ul .slider {
+    list-style: none;
+}
+
+.slider a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.748);
+    font-size: 25px;
+    text-shadow: 1px 2px 2px black;
+}
+
+.containImg {
+    margin: 10px auto;
+    width: 100%;
+}
+
+.containImg img {
+    width: 100vw;
+    margin-top: -200px;
+    filter: contrast(150%)
+}
+
+.generos ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.generos ul li {
+    margin: 1px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.844);
+    text-shadow: 1px 2px 2px black;
+}
+
+.generos ul li {
+    list-style: none;
+}
+
+.generos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    background-image: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.844) 40%, rgba(0, 0, 0, 0.618) 60%, rgba(6, 6, 94, 0.624) 100%);
+    width: 100%;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px auto;
+}
+
+.miLista a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.miLista a span{
+    color: white;
+}
+
+.Repro a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.informacion a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 2px;
+}
+
+.informacion a span{
+    color: white;
+}
+
+.Repro a span{
+    color: black;
+}
+
+.peliculas:last-child{
+    margin-bottom: 60px;
+}
+
+.peliculas .title {
+    margin: 15px;
+    text-align: center;
+}
+
+.peliculasPopulares {
+    white-space: nowrap;
+    overflow-x: auto;
+    
+}
+
+.img-Peliculas {
+    display: inline-block;
+    
+}
+
+.img-Peliculas .imgs {
+    width: 140px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid white;
+}
+
+.img-Peliculas .imgs:hover {
+    width: 130px;
+    height: 190px;
+}
+
+.seriesJaponesas {
+    white-space: nowrap;
+    overflow-x: auto;
+
+}
+
+.seriesCrimenes {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.similares:last-child{
+    margin-bottom: 60px;
+}
+
+.peliculasMasSimilares{
+    white-space: nowrap;
+    overflow-x: auto;   
+}
+
+.menuFijo{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    padding: 10px 0 ;
+}
+
+.listFooter{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+}
+
+.itemFooter{
+    text-align: center;
+    border-right: 1px solid #6e6e6e;
+}
+
+.itemFooter:last-child{
+    border: none;
+}
+
+.itemFooter a{
+    color: #6e6e6e;
+    text-decoration: none;
+}
+
+.itemIcon{
+    fill: #6e6e6e;
+    display: block;
+    margin: 0 auto;
+}
+
+.itemFooter:hover :is(path, span){
+    fill: white;
+    color: white;
+}
+
+.img-header{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.img-header .img-info{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.title2{
+    margin: 10px auto; 
+}
+
+.infoExtraPelicula{
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoExtraPelicula .coincidencia{
+    color: rgb(95, 208, 95);
+}
+
+.infoExtraPelicula .calidadPelicula{
+    border: 1px solid white;
+    border-radius: 2px;
+    font-size: 13px;
+    padding: 1px;
+    margin: 0;
+}
+
+.optionsPelicula{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.btnOptions{
+    width: 100%;
+    background-color: rgb(41, 41, 41);
+    text-align: center;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.btnOptions:first-child{
+    background-color: white;
+}
+
+.btnOptions:active{
+    padding: 1.5px;
+}
+
+.btn-reproducir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    text-decoration: none;
+}
+
+.btn-reproducir span{
+    color: black;
+}
+
+.btn-descargar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.btn-descargar span{
+    color: white;
+}
+
+.sinopsisPelicula{
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.sinopsisPelicula .parrafo{
+    color: rgb(187, 187, 187);
+}
+
+.produccion{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.produccion h5{
+    color: rgb(114, 114, 114);
+}
+
+.btn-interartuar{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+
+.btn-interartuar .btnItem a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.btnItem a span{
+    color: rgb(163, 163, 163);
+}
+
+
+.titleSimilares{
+    margin: 10px;
+    border-top: 3px solid rgb(181, 1, 1);
+    width: 40%;
+    padding-top: 10px;
+}
